@@ -32,7 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.txLoginPwd = new System.Windows.Forms.TextBox();
+            this.txtLoginPwd = new System.Windows.Forms.TextBox();
             this.txtLoginId = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -60,6 +60,7 @@
             this.btnClose.Text = "退  出";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnLogin
             // 
@@ -73,16 +74,17 @@
             this.btnLogin.Text = "登  录";
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // txLoginPwd
+            // txtLoginPwd
             // 
-            this.txLoginPwd.Location = new System.Drawing.Point(408, 93);
-            this.txLoginPwd.Margin = new System.Windows.Forms.Padding(4);
-            this.txLoginPwd.Name = "txLoginPwd";
-            this.txLoginPwd.PasswordChar = '*';
-            this.txLoginPwd.Size = new System.Drawing.Size(179, 25);
-            this.txLoginPwd.TabIndex = 8;
-            this.txLoginPwd.Text = "123456";
+            this.txtLoginPwd.Location = new System.Drawing.Point(408, 93);
+            this.txtLoginPwd.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLoginPwd.Name = "txtLoginPwd";
+            this.txtLoginPwd.PasswordChar = '*';
+            this.txtLoginPwd.Size = new System.Drawing.Size(179, 25);
+            this.txtLoginPwd.TabIndex = 8;
+            this.txtLoginPwd.Text = "123456";
             // 
             // txtLoginId
             // 
@@ -121,7 +123,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txLoginPwd);
+            this.Controls.Add(this.txtLoginPwd);
             this.Controls.Add(this.txtLoginId);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -137,7 +139,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.TextBox txLoginPwd;
+        private System.Windows.Forms.TextBox txtLoginPwd;
         private System.Windows.Forms.TextBox txtLoginId;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
