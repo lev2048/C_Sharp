@@ -44,5 +44,17 @@ namespace DAL
                 throw new Exception("数据访问发生异常：" + ex.Message);
             }
         }
+        /// <summary>
+        /// 根据登录账号修改登录密码
+        /// </summary>
+        /// <param name="loginId"></param>
+        /// <param name="newPwd"></param>
+        /// <returns></returns>
+        public int ModifyPwd(string loginId,string newPwd)
+        {
+            string sql = "update Admins set LoginPwd='{0}' where LoginId={1}";
+            sql = string.Format(sql, newPwd, loginId);
+            return SQLHelper.Update(sql);
+        }
     }
-}
+} 
