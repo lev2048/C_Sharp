@@ -20,16 +20,17 @@ namespace StudentManager
 
             //显示登录窗体
             FrmUserLogin objLoginForm = new FrmUserLogin();
+            //返回登陆信息
             DialogResult reuslt = objLoginForm.ShowDialog();
 
-            //判断登录是否成功
+            //根据返回信息判断登录是否成功
             if (reuslt == DialogResult.OK)
                 Application.Run(new FrmMain());
             else
                 Application.Exit();//退出整个应用程序
         }
 
-        //定义一个全局变量
+        //定义一个全局变量，保存登陆信息
         public static Admin currentAdmin = null;
     }
 }

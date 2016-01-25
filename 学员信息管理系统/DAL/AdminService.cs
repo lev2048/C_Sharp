@@ -23,6 +23,7 @@ namespace DAL
         {
             string sql = "select AdminName from Admins where LoginId={0} and LoginPwd='{1}'";
             sql = string.Format(sql, objAdmin.LoginId, objAdmin.LoginPwd);
+            //查询
             try
             {
                 SqlDataReader objReader = SQLHelper.GetReader(sql);
@@ -30,6 +31,7 @@ namespace DAL
                 {
                     objAdmin.AdminName = objReader["AdminName"].ToString();
                 }
+                //如果没找到，清空objAdmin
                 else
                 {
                     objAdmin = null;

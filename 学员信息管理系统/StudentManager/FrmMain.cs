@@ -15,6 +15,7 @@ namespace StudentManager
         public FrmMain()
         {
             InitializeComponent();
+            this.lblCurrentUser.Text = Program.currentAdmin.AdminName+"]";//显示登陆用户名
         }
 
         #region 嵌入窗体显示
