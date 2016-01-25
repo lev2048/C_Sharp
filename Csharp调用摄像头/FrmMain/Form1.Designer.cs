@@ -39,7 +39,7 @@
             this.btn_Start.Name = "btn_Start";
             this.btn_Start.Size = new System.Drawing.Size(75, 23);
             this.btn_Start.TabIndex = 0;
-            this.btn_Start.Text = "button1";
+            this.btn_Start.Text = "开始";
             this.btn_Start.UseVisualStyleBackColor = true;
             this.btn_Start.Click += new System.EventHandler(this.btn_Start_Click);
             // 
@@ -47,7 +47,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(58, 54);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(456, 289);
+            this.pictureBox1.Size = new System.Drawing.Size(241, 211);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
