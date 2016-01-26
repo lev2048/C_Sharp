@@ -74,5 +74,23 @@ namespace StudentManager
         {
             this.Close();
         }
+        //在id框输入后回车到pw框，回车键值13
+        private void txtLoginId_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (this.txtLoginId.Text.Trim().Length == 0) return;
+            if (e.KeyValue == 13)
+            {
+                this.txtLoginPwd.Focus();
+            }
+        }
+        //在pw框回车直接登录
+        private void txtLoginPwd_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (this.txtLoginId.Text.Trim().Length == 0) return;
+            if (e.KeyValue == 13)
+            {
+                btnLogin_Click(null, null);
+            }
+        }
     }
 }
