@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using Models;
-
+using Models.Ext;
 namespace DAL
 {
     /// <summary>
@@ -73,5 +73,32 @@ namespace DAL
                 throw new Exception("保存数据出现问题！" + ex.Message);
             }
         }
+        /// <summary>
+        /// 根据班级编号查询学员对象
+        /// </summary>
+        /// <param name="classId"></param>
+        /// <returns></returns>
+        public List<StudentExt>GetStudentByClassId(string classId)
+        {
+            string sql = "select StudentId,StudentName,Gender,Birthday,ClassName from Students";
+            sql += " inner join StudentClass on Students.ClassId=StudentClass.ClassId";//注意开头的空格
+            sql += " where Students.ClassId=" + classId;
+            SqlDataReader objReader = SQLHelper.GetReader(sql);
+            List<StudentExt> list = new List<StudentExt>();
+            while (objReader.Read())
+            {
+                list.Add(new StudentExt()
+                {
+                    StudentId = Convert.ToInt32(objReader["StudentId"]),
+                    StudentName = objReader["StudentName"].ToString(),
+                    Gender = objReader["Gender"].ToString(),
+                    Birthday = Convert.ToDateTime(objReader["Birthday"]),
+                    ClassName = objReader["ClassName"].ToString()
+                });
+            }
+            objReader.Close();
+            return list;
+        }
+
     }
 }
