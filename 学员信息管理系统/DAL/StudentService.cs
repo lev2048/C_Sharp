@@ -99,6 +99,32 @@ namespace DAL
             objReader.Close();
             return list;
         }
-
+        public StudentExt GetStudentByStuId(string stuId)
+        {
+            string sql = "select StudentName,StudentId,Age,Gender,Birthday,CardNo,ClassName,StudentIdNo,PhoneNumber,StudentAddress,StuImage from Students";
+            sql += " inner join StudentClass on Students.ClassId=StudentClass.ClassId";//注意开头的空格
+            sql += " where StudentId=" + stuId;
+            SqlDataReader objReader = SQLHelper.GetReader(sql);
+            StudentExt objStudent = null;
+            if (objReader.Read())
+            {
+                objStudent = new StudentExt()
+                {
+                    StudentId = Convert.ToInt32(objReader["StudentId"]),
+                    StudentName = objReader["StudentName"].ToString(),
+                    Gender = objReader["Gender"].ToString(),
+                    Birthday = Convert.ToDateTime(objReader["Birthday"]),
+                    ClassName = objReader["ClassName"].ToString(),
+                    CardNo = objReader["CardNo"].ToString(),
+                    StudentIdNo = objReader["StudentIdNo"].ToString(),
+                    Age = Convert.ToInt32(objReader["Age"]),
+                    PhoneNumber = objReader["PhoneNumber"].ToString(),
+                    StudentAddress = objReader["StudentAddress"].ToString(),
+                    StuImage = objReader["StuImage"] is DBNull ? "" : objReader["StuImage"].ToString()
+                };
+            }
+            objReader.Close();
+            return objStudent;
+        }
     }
 }

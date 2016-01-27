@@ -62,7 +62,7 @@
             // 
             // lblAddress
             // 
-            this.lblAddress.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblAddress.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblAddress.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAddress.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblAddress.Location = new System.Drawing.Point(102, 270);
@@ -74,7 +74,7 @@
             // 
             // lblCardNo
             // 
-            this.lblCardNo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCardNo.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblCardNo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCardNo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblCardNo.Location = new System.Drawing.Point(102, 180);
@@ -86,7 +86,7 @@
             // 
             // lblPhoneNumber
             // 
-            this.lblPhoneNumber.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblPhoneNumber.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblPhoneNumber.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblPhoneNumber.Location = new System.Drawing.Point(102, 224);
@@ -98,7 +98,7 @@
             // 
             // lblStudentIdNo
             // 
-            this.lblStudentIdNo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblStudentIdNo.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblStudentIdNo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblStudentIdNo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblStudentIdNo.Location = new System.Drawing.Point(102, 132);
@@ -110,7 +110,7 @@
             // 
             // lblBirthday
             // 
-            this.lblBirthday.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblBirthday.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblBirthday.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblBirthday.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblBirthday.Location = new System.Drawing.Point(102, 74);
@@ -122,7 +122,7 @@
             // 
             // lblClass
             // 
-            this.lblClass.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblClass.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblClass.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblClass.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblClass.Location = new System.Drawing.Point(368, 74);
@@ -134,7 +134,7 @@
             // 
             // lblGender
             // 
-            this.lblGender.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblGender.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblGender.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblGender.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblGender.Location = new System.Drawing.Point(368, 24);
@@ -146,8 +146,9 @@
             // 
             // lblStudentName
             // 
-            this.lblStudentName.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblStudentName.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblStudentName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblStudentName.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblStudentName.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblStudentName.Location = new System.Drawing.Point(102, 24);
             this.lblStudentName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);

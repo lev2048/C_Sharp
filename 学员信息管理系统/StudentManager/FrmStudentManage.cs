@@ -17,6 +17,7 @@ namespace StudentManager
     {
         private StudentClassService objClassService = new StudentClassService();
         private StudentService objStudentService = new StudentService();
+        private List<StudentExt> list = null;
         public FrmStudentManage()
         {
             InitializeComponent();
@@ -35,14 +36,33 @@ namespace StudentManager
                 this.cboClass.Focus();
                 return;
             }
-            List<StudentExt> list = objStudentService.GetStudentByClassId(this.cboClass.SelectedValue.ToString());
+            list = objStudentService.GetStudentByClassId(this.cboClass.SelectedValue.ToString());
             this.dgvStudentList.AutoGenerateColumns = false;//禁止生成不需要的列
             this.dgvStudentList.DataSource = list;
         }
         //根据学号查询
         private void btnQueryById_Click(object sender, EventArgs e)
         {
-
+            if(this.txtStudentId.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("请输入要查询的学号！", "查询提示");
+                this.txtStudentId.Focus();
+                return;
+            }
+            //根据学号查询学员对象
+            StudentExt objStudent = objStudentService.GetStudentByStuId(this.txtStudentId.Text.Trim());
+            if (objStudent == null)
+            {
+                MessageBox.Show("您输入的学号不正确，未找到该学员信息！","查询提示");
+                this.txtStudentId.Focus();
+                this.txtStudentId.SelectAll();
+            }   
+            else
+            {
+                //创建学员信息显示窗体
+                FrmStudentinfo objStudentForm = new FrmStudentinfo(objStudent);
+                objStudentForm.Show();
+            }
         }
 
         private void txtStudentId_TextChanged(object sender, EventArgs e)
@@ -64,12 +84,18 @@ namespace StudentManager
         //姓名降序
         private void btnNameDESC_Click(object sender, EventArgs e)
         {
-
+            if (list == null || this.dgvStudentList.RowCount == 0) return;//防止误操作崩溃
+            this.list.Sort(new NameDESC());//排序
+            this.dgvStudentList.DataSource = null;
+            this.dgvStudentList.DataSource = list;
         }
         //学号降序
         private void btnStuIdDESC_Click(object sender, EventArgs e)
         {
-
+            if (list == null || this.dgvStudentList.RowCount == 0) return;
+            this.list.Sort(new StudentIdDESC());//排序
+            this.dgvStudentList.DataSource = null;
+            this.dgvStudentList.DataSource = list;
         }
         //添加行号
         private void dgvStudentList_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
@@ -86,5 +112,36 @@ namespace StudentManager
         {
             this.Close();
         }
+        //回车查询
+        private void txtStudentId_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (this.txtStudentId.Text.Trim().Length == 0) return;
+            if (e.KeyValue == 13)
+            {
+                btnQueryById_Click(null, null);
+            }
+        }
     }
+    /// <summary>
+    /// 按照姓名降序排列
+    /// </summary>
+
+    class NameDESC:IComparer<StudentExt>
+    {
+        public int Compare(StudentExt x,StudentExt y)
+        {
+            return y.StudentName.CompareTo(x.StudentName);
+        }
+    }
+    /// <summary>
+    /// 按照学号降序排列
+    /// </summary>
+    class StudentIdDESC:IComparer<StudentExt>
+    {
+        public int Compare(StudentExt x, StudentExt y)
+        {
+            return y.StudentId.CompareTo(x.StudentId);
+        }
+    }
+       
 }
