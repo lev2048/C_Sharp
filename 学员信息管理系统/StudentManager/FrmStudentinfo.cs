@@ -33,6 +33,7 @@ namespace StudentManager
             this.lblCardNo.Text = objStudent.CardNo;
             this.lblClass.Text = objStudent.ClassName;
             this.lblGender.Text = objStudent.Gender;
+            //图片反序列化
             this.pbStu.Image = objStudent.StuImage.Length == 0 ? Image.FromFile("default.png") : (Image) new SerializeObjectToString().DeserializeObject(objStudent.StuImage);
 
         }
