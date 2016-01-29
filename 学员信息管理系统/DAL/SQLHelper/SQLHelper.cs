@@ -6,6 +6,7 @@ using System.Text;
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;//引入读取配置文件类所在的命名空间
+using StudentManager;
 
 namespace DAL
 {
@@ -14,7 +15,7 @@ namespace DAL
     /// </summary>
     public class SQLHelper
     {
-        private static string connString = ConfigurationManager.ConnectionStrings["connString"].ToString(); 
+        private static string connString = StringSecurity.DESDecrypt(ConfigurationManager.ConnectionStrings["connString"].ToString());
 
         /// <summary>
         /// 执行增、删、改操作
