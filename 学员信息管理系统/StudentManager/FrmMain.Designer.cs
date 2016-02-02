@@ -243,10 +243,11 @@
             this.panelForm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelForm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelForm.BackgroundImage")));
             this.panelForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelForm.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelForm.Controls.Add(this.lblTitle);
-            this.panelForm.Location = new System.Drawing.Point(0, 55);
+            this.panelForm.Location = new System.Drawing.Point(0, 59);
             this.panelForm.Margin = new System.Windows.Forms.Padding(4);
             this.panelForm.Name = "panelForm";
             this.panelForm.Size = new System.Drawing.Size(1261, 742);

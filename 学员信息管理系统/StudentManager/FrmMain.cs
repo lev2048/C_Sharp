@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
 
+
 namespace StudentManager
 {
     public partial class FrmMain : Form
@@ -17,7 +18,7 @@ namespace StudentManager
         {
             InitializeComponent();
             this.lblCurrentUser.Text = Program.currentAdmin.AdminName+"]";//显示登陆用户名
-            this.panelForm.BackgroundImage = Image.FromFile("mainbg.jpg");//背景图片，相对路径，debug引用drawing
+            //this.panelForm.BackgroundImage = Image.FromFile("mainbg.jpg");//背景图片，相对路径，debug引用drawing
             this.lblVersion.Text = "版本号：V" + ConfigurationManager.AppSettings["sysversion"].ToString();//版本号
         }
 
