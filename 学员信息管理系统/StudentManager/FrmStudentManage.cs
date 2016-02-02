@@ -79,7 +79,23 @@ namespace StudentManager
         //修改学员对象
         private void btnEidt_Click(object sender, EventArgs e)
         {
-
+            //判断是否有修改的信息
+            if(this.dgvStudentList.RowCount == 0||this.dgvStudentList.CurrentRow == null)
+            {
+                MessageBox.Show("没有要修改的信息！","修改提示");
+                return;
+            }
+            //获取要修改的学员信息
+            string studentId = this.dgvStudentList.CurrentRow.Cells["StudentId"].Value.ToString();
+            StudentExt objStudent = objStudentService.GetStudentByStuId(studentId);
+            //显示修改窗体
+            FrmEditStudent objEditForm = new FrmEditStudent(objStudent);
+            DialogResult result = objEditForm.ShowDialog();
+            //判断是否成功
+            if (result == DialogResult.OK)
+            {
+                btnQuery_Click(null, null);
+            }
         }
         //姓名降序
         private void btnNameDESC_Click(object sender, EventArgs e)

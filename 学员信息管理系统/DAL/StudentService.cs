@@ -74,6 +74,61 @@ namespace DAL
             }
         }
         /// <summary>
+        /// 修改学员时判断身份证号是否重复
+        /// </summary>
+        /// <param name="idNo"></param>
+        /// <param name="studentId"></param>
+        /// <returns></returns>
+        public bool IsIdNoExisted(string idNo, string studentId)
+        {
+            string sql = "select count(*)from Students where StudentIdNo="
+                + idNo + "and StudentId<>" + studentId;
+            int result = Convert.ToInt32(SQLHelper.GetSingleResult(sql));
+            if (result == 1) return true;
+            else return false;
+        }
+        /// <summary>
+        /// 验证考勤卡号
+        /// </summary>
+        /// <param name="cardNo"></param>
+        /// <param name="studentId"></param>
+        /// <returns></returns>
+        public bool IscardExisted(string cardNo, string studentId)
+        {
+            string sql = "select count(*)from Students where CardNo='"
+                + cardNo + "' and StudentId<>" + studentId;//varchar类型溢出，需在cardNo上用单引号阔上
+            int count = Convert.ToInt32(SQLHelper.GetSingleResult(sql));
+            if (count == 1)
+                return true;
+            else
+                return false;
+        }
+        /// <summary>
+        /// 修改学员对象
+        /// </summary>
+        /// <param name="objStudent"></param>
+        /// <returns></returns>
+        public int MondifyStudent(Student objStudent)
+        {
+            StringBuilder sqlBuilder = new StringBuilder();
+            sqlBuilder.Append("update Students set studentName='{0}',Gender='{1}',Birthday='{2}',");
+            sqlBuilder.Append("StudentIdNo={3},Age={4},PhoneNumber='{5}',StudentAddress='{6}',CardNo='{7}',ClassId={8},StuImage='{9}'");
+            sqlBuilder.Append("where StudentId={10}");
+            string sql = string.Format(sqlBuilder.ToString(), objStudent.StudentName,
+               objStudent.Gender, objStudent.Birthday.ToString("yyyy-MM-dd"),
+               objStudent.StudentIdNo, objStudent.Age, objStudent.PhoneNumber,
+               objStudent.StudentAddress, objStudent.CardNo,
+               objStudent.ClassId,objStudent.StuImage,objStudent.StudentId);//studentid容易漏加
+            try
+            {
+                return Convert.ToInt32(SQLHelper.Update(sql));
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("保存数据出现问题！" + ex.Message);
+            }
+        }
+        /// <summary>
         /// 根据班级编号查询学员对象
         /// </summary>
         /// <param name="classId"></param>
