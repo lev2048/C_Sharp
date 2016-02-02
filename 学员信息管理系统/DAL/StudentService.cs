@@ -154,6 +154,30 @@ namespace DAL
             objReader.Close();
             return list;
         }
+        /// <summary>
+        /// 删除学员对象
+        /// </summary>
+        /// <param name="studentId"></param>
+        /// <returns></returns>
+        public int DeleteStudent(string studentId)
+        {
+            string sql = "delete from Students where StudentId =" + studentId;
+            try
+            {
+                return SQLHelper.Update(sql);
+            }
+            catch(SqlException ex)
+            {
+                if(ex.Number== 547)
+                throw new Exception("当前学号被其他数据表引用，不能直接被删除！");
+                else
+                throw new Exception("删除学员对象发生错误："+ex.Message);
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("删除学员对象发生错误：" + ex.Message);
+            }
+        }
         public StudentExt GetStudentByStuId(string stuId)
         {
             string sql = "select StudentName,StudentId,Age,Gender,Birthday,CardNo,ClassName,StudentIdNo,PhoneNumber,StudentAddress,StuImage from Students";

@@ -129,6 +129,7 @@
             this.btnDel.Text = "删  除";
             this.btnDel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnEidt
             // 
@@ -208,6 +209,7 @@
             this.tsmidDeleteStu.Name = "tsmidDeleteStu";
             this.tsmidDeleteStu.Size = new System.Drawing.Size(181, 26);
             this.tsmidDeleteStu.Text = "删除学员(&D)";
+            this.tsmidDeleteStu.Click += new System.EventHandler(this.tsmidDeleteStu_Click);
             // 
             // tsmiModifyStu
             // 

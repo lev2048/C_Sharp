@@ -152,8 +152,43 @@ namespace StudentManager
                 btnQueryById_Click(null, null);
             }
         }
+        //删除学员对象
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            if (this.dgvStudentList.RowCount == 0)
+            {
+                MessageBox.Show("没有要删除的对象", "删除提示");
+                return;
+            }
+            if(this.dgvStudentList.CurrentRow == null)
+            {
+                MessageBox.Show("请选择要删除的学员对象", "删除提示");
+                return;
+            }
+            //删除确认
+            DialogResult result = MessageBox.Show("确认要删除吗？", "删除确认", MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
+            if (result == DialogResult.Cancel) return;
+            //获取要删除的学号
+            string studentId = this.dgvStudentList.CurrentRow.Cells["StudentId"].Value.ToString();
+            //根据学号删除
+            try
+            {
+                if (objStudentService.DeleteStudent(studentId) == 1)
+                {
+                    MessageBox.Show("删除成功！", "删除提示");
+                    btnQuery_Click(null, null);
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "删除信息");
+            }
+        }
 
-        
+        private void tsmidDeleteStu_Click(object sender, EventArgs e)
+        {
+            btnDel_Click(null, null);
+        }
     }
     /// <summary>
     /// 按照姓名降序排列
