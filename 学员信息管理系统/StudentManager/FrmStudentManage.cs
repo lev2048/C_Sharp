@@ -105,7 +105,17 @@ namespace StudentManager
         //打印当前学生信息
         private void btnPrint_Click(object sender, EventArgs e)
         {
-
+            if(this.dgvStudentList.RowCount == 0||this.dgvStudentList.CurrentRow == null)
+            {
+                MessageBox.Show("没有要打印的信息！", "打印提示");
+                return;
+            }
+            //获取要打印的学员对象
+            string studentId = this.dgvStudentList.CurrentRow.Cells["StudentId"].Value.ToString();
+            StudentExt objStudent = objStudentService.GetStudentByStuId(studentId);
+            //调用Excel模板实现打印
+            ExcelPrint.PrintStudent objPrint = new ExcelPrint.PrintStudent();
+            objPrint.ExecutePrint(objStudent);
         }
         //关闭
         private void btnClose_Click(object sender, EventArgs e)
