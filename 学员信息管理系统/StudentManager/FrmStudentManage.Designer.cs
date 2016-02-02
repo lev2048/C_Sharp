@@ -206,14 +206,15 @@
             // tsmidDeleteStu
             // 
             this.tsmidDeleteStu.Name = "tsmidDeleteStu";
-            this.tsmidDeleteStu.Size = new System.Drawing.Size(169, 26);
+            this.tsmidDeleteStu.Size = new System.Drawing.Size(181, 26);
             this.tsmidDeleteStu.Text = "删除学员(&D)";
             // 
             // tsmiModifyStu
             // 
             this.tsmiModifyStu.Name = "tsmiModifyStu";
-            this.tsmiModifyStu.Size = new System.Drawing.Size(169, 26);
+            this.tsmiModifyStu.Size = new System.Drawing.Size(181, 26);
             this.tsmiModifyStu.Text = "修改学员(&M)";
+            this.tsmiModifyStu.Click += new System.EventHandler(this.tsmiModifyStu_Click);
             // 
             // contextMenuStrip1
             // 
@@ -222,7 +223,7 @@
             this.tsmiModifyStu,
             this.tsmidDeleteStu});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(170, 56);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(182, 84);
             // 
             // ClassName
             // 

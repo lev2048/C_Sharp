@@ -97,6 +97,11 @@ namespace StudentManager
                 btnQuery_Click(null, null);
             }
         }
+        //右键菜单修改
+        private void tsmiModifyStu_Click(object sender, EventArgs e)
+        {
+            btnEidt_Click(null, null);
+        }
         //姓名降序
         private void btnNameDESC_Click(object sender, EventArgs e)
         {
@@ -147,6 +152,8 @@ namespace StudentManager
                 btnQueryById_Click(null, null);
             }
         }
+
+        
     }
     /// <summary>
     /// 按照姓名降序排列
