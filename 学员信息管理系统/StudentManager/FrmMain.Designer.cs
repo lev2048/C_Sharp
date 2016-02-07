@@ -250,7 +250,7 @@
             this.panelForm.Location = new System.Drawing.Point(0, 59);
             this.panelForm.Margin = new System.Windows.Forms.Padding(4);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(1267, 715);
+            this.panelForm.Size = new System.Drawing.Size(1272, 715);
             this.panelForm.TabIndex = 12;
             // 
             // menuStrip1
