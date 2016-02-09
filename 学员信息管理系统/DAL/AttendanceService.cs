@@ -42,7 +42,7 @@ namespace DAL
             }
             else dt1 = dt;
             DateTime dt2 = dt1.AddDays(1.0);//结束时间等于开始时间加1
-            string sql = "select count(distinct CardNo) from Attendance where DTime between '{0}'and'{1}'";
+            string sql = "select count(distinct CardNo) from Attendance where DTime between '{0:d}'and'{1:d}'";//注意日期格式不能带下午
             sql = string.Format(sql, dt1, dt2);
             try
             {
