@@ -91,5 +91,13 @@ namespace DAL
                 throw ex;
             }
         }
+        /// <summary>
+        /// 获取服务器时间
+        /// </summary>
+        /// <returns></returns>
+        public static DateTime GetServerTime()
+        {
+            return Convert.ToDateTime(GetSingleResult("select getdate()"));
+        }
     }
 }
