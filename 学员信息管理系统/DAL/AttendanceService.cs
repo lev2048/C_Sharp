@@ -30,10 +30,10 @@ namespace DAL
         /// <summary>
         /// 获取已经签到的学员总数
         /// </summary>
-        /// <param name="dt"></param>
-        /// <param name="isToday"></param>
+        /// <param name = "dt" ></ param >
+        /// < param name="isToday"></param>
         /// <returns></returns>
-        public string GetAttendStudents(DateTime dt,bool isToday)
+        public string GetAttendStudents(DateTime dt, bool isToday)
         {
             DateTime dt1;
             if (isToday)//如果是当天，则直接获取服务器时间
@@ -51,6 +51,25 @@ namespace DAL
             catch (Exception ex)
             {
                 throw new Exception("暂时无法获取实到学员总数：" + ex.Message);
+            }
+        }
+        /// <summary>
+        /// 添加打卡记录
+        /// </summary>
+        /// <param name = "cardNo" ></ param >
+        /// < returns ></ returns >
+        public string AdddRecord(string cardNo)
+        {
+            string sql = "insert into Attendance (CardNo) values('{0}')";
+            sql = string.Format(sql, cardNo);
+            try
+            {
+                SQLHelper.Update(sql);
+                return "success";
+            }
+            catch (Exception ex)
+            {
+                return "打卡失败！请联系管理员：" + ex.Message;
             }
         }
     }

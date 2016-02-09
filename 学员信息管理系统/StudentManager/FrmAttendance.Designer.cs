@@ -211,6 +211,7 @@
             this.txtStuCardNo.Size = new System.Drawing.Size(237, 42);
             this.txtStuCardNo.TabIndex = 93;
             this.txtStuCardNo.TextChanged += new System.EventHandler(this.txtStuCardNo_TextChanged);
+            this.txtStuCardNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtStuCardNo_KeyDown);
             // 
             // lblStuId
             // 

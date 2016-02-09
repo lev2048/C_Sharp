@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DAL;
+using Models.Ext;
 
 namespace StudentManager
 {
     public partial class FrmAttendance : Form
     {
         private AttendanceService objAttService = new AttendanceService();
+        private StudentService objStuService = new StudentService();
         public FrmAttendance()
         {
             InitializeComponent();
@@ -61,7 +63,7 @@ namespace StudentManager
                     break;
             }
         }
-        //学员打卡
+       
         private void txtStuCardNo_TextChanged(object sender, EventArgs e)
         {
 
@@ -70,6 +72,47 @@ namespace StudentManager
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        //学员打卡
+        private void txtStuCardNo_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (this.txtStuCardNo.Text.Trim().Length == 0 || e.KeyValue != 13) return;
+            //显示学员信息
+            StudentExt objStu = objStuService.GetStudentByCardNo(this.txtStuCardNo.Text.Trim());
+            if (objStu == null)
+            {
+                MessageBox.Show("卡号不正确！", "信息提示");
+                this.lblInfo.Text = "打卡失败！";
+                this.txtStuCardNo.SelectAll();
+                this.lblStuName.Text = "";
+                this.lblStuClass.Text = "";
+                this.lblStuId.Text = "";
+                this.pbStu.Image = null;
+            }
+            else
+            {
+                this.lblStuName.Text = objStu.StudentName;
+                this.lblStuClass.Text = objStu.ClassName;
+                this.lblStuId.Text = objStu.StudentId.ToString();
+                if (objStu.StuImage != null && objStu.StuImage.Length != 0)
+                    this.pbStu.Image = (Image)new SerializeObjectToString().DeserializeObject(objStu.StuImage);
+                else
+                    this.pbStu.Image = Image.FromFile("default.png");
+                //添加打卡信息
+                string result = objAttService.AdddRecord(this.txtStuCardNo.Text.Trim());
+                if(result!="success")
+                {
+                    this.lblInfo.Text = "打卡失败！";
+                    MessageBox.Show(result, "信息提示");
+                }else
+                {
+                    this.lblInfo.Text = "打卡成功！";
+                    ShowStat();//同时更新人数
+                    this.txtStuCardNo.Text = "";
+                    this.txtStuCardNo.Focus();//等待下一打卡
+                }
+            }
+            
         }
     }
 }

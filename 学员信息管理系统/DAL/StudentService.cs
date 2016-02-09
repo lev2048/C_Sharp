@@ -178,11 +178,31 @@ namespace DAL
                 throw new Exception("删除学员对象发生错误：" + ex.Message);
             }
         }
+        /// <summary>
+        /// 根据学号查询学员对象
+        /// </summary>
+        /// <param name="stuId"></param>
+        /// <returns></returns>
         public StudentExt GetStudentByStuId(string stuId)
         {
+            string whereSql = "where StudentId=" + stuId;
+            return this.GetStudentBySql(whereSql);
+        }
+        /// <summary>
+        /// 根据卡号获取学员对象
+        /// </summary>
+        /// <param name="cardNo"></param>
+        /// <returns></returns>
+        public StudentExt GetStudentByCardNo(string cardNo)
+        {
+            string whereSql = string.Format("where CardNo='{0}'", cardNo);
+            return this.GetStudentBySql(whereSql);
+        }
+        private StudentExt GetStudentBySql(string whereSql)
+        {
             string sql = "select StudentName,StudentId,Age,Gender,Birthday,CardNo,ClassName,StudentIdNo,PhoneNumber,StudentAddress,StuImage from Students";
-            sql += " inner join StudentClass on Students.ClassId=StudentClass.ClassId";//注意开头的空格
-            sql += " where StudentId=" + stuId;
+            sql += " inner join StudentClass on Students.ClassId=StudentClass.ClassId ";//注意开头的空格
+            sql += whereSql;
             SqlDataReader objReader = SQLHelper.GetReader(sql);
             StudentExt objStudent = null;
             if (objReader.Read())
