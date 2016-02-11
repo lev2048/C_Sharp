@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Models.Ext;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace DAL
 {
@@ -71,6 +74,40 @@ namespace DAL
             {
                 return "打卡失败！请联系管理员：" + ex.Message;
             }
+        }
+        /// <summary>
+        /// 根据日期和姓名查询考勤情况
+        /// </summary>
+        /// <param name="beginTime"></param>
+        /// <param name="endTime"></param>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public List<StudentExt> GetStudentByDate(DateTime beginTime,DateTime endTime,string name)
+        {
+            string sql = "select StudentId,StudentName,Gender,DTime,ClassName from Students";
+            sql += " inner join StudentClass on Students.ClassId=StudentClass.ClassId";
+            sql += " inner join Attendance on Students.CardNo=Attendance.CardNo";
+            sql += " where DTime Between '{0:d}' and '{1:d}'";
+            sql = string.Format(sql, beginTime, endTime);
+            if (name != null && name.Length != 0)
+            {
+                sql += string.Format("and StudentName='{0}'", name);
+            }
+            sql += "Order by DTime ASC";//升序排序
+            SqlDataReader objReader = SQLHelper.GetReader(sql);
+            List<StudentExt> list = new List<StudentExt>();
+            while (objReader.Read())
+            {
+                list.Add(new StudentExt()
+                {
+                    StudentId = Convert.ToInt32(objReader["StudentId"]),
+                    StudentName = objReader["StudentName"].ToString(),
+                    Gender = objReader["Gender"].ToString(),
+                    ClassName = objReader["ClassName"].ToString(),
+                    DTime = Convert.ToDateTime(objReader["Dtime"])
+                });
+            }
+            return list;
         }
     }
 }

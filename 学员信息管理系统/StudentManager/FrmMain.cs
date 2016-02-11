@@ -81,11 +81,13 @@ namespace StudentManager
         private void tsmiQueryAndAnalysis_Click(object sender, EventArgs e)
         {
             FrmScoreManage objForm = new FrmScoreManage();
+            this.OpenForm(objForm);
         }
         //考勤查询
         private void tsmi_AQuery_Click(object sender, EventArgs e)
         {
             FrmAttendanceQuery objForm = new FrmAttendanceQuery();
+            this.OpenForm(objForm);
         }
         
         #endregion
