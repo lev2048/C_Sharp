@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL;
+using Models;
 
 namespace StudentManager
 {
@@ -15,6 +17,12 @@ namespace StudentManager
         public FrmScoreManage()
         {
             InitializeComponent();
+            this.cboClass.DataSource = new StudentClassService().GetAllStuClass().Tables[0];//注意tables0错误
+            this.cboClass.DisplayMember = "ClassName";
+            this.cboClass.ValueMember = "ClassId";
+            this.cboClass.SelectedIndex = -1;
+            //消除事件
+            this.cboClass.SelectedIndexChanged -= new EventHandler(this.cboClass_SelectedIndexChanged);
         }
         //根据班级查询
         private void cboClass_SelectedIndexChanged(object sender, EventArgs e)

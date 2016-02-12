@@ -7,6 +7,9 @@ using System.Data;
 using System.Data.SqlClient;
 namespace DAL
 {
+    /// <summary>
+    /// 成绩
+    /// </summary>
     public class ScoreListService
     {
     }

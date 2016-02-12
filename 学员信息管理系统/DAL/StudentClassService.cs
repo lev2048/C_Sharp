@@ -24,11 +24,16 @@ namespace DAL
                 list.Add(new StudentClass()
                 {
                     ClassId = Convert.ToInt32(objReader["ClassID"]),
-                    ClassName=objReader["ClassName"].ToString()
+                    ClassName = objReader["ClassName"].ToString()
                 });
             }
             objReader.Close();//关闭读取器
             return list;
+        }
+        public DataSet GetAllStuClass()
+        {
+            string sql = "select ClassId,ClassName from StudentClass";
+            return SQLHelper.GetDataSet(sql);
         }
     }
 }
