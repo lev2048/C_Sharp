@@ -102,5 +102,16 @@ namespace DAL
             objReader.Close();
             return list;
         }
+        /// <summary>
+        /// 查询全部成绩
+        /// </summary>
+        /// <returns></returns>
+        public DataSet GetAllScoreList()
+        {
+            string sql = "select Students.StudentId,StudentName,ClassName,CSharp,SQLServerDB from Students";
+            sql += " inner join StudentClass on StudentClass.ClassId=Students.ClassId";
+            sql += " inner join ScoreList on ScoreList.StudentId=Students.StudentId";
+            return SQLHelper.GetDataSet(sql);
+        } 
     }
 }
