@@ -18,17 +18,36 @@ namespace StudentManager
         public FrmScoreManage()
         {
             InitializeComponent();
-            this.cboClass.DataSource = new StudentClassService().GetAllStuClass().Tables[0];//注意tables0错误
+            this.cboClass.DataSource = new StudentClassService().GetAllStuClass().Tables[0];//注意tables0错误       
             this.cboClass.DisplayMember = "ClassName";
-            this.cboClass.ValueMember = "ClassId";
+            this.cboClass.ValueMember = "ClassId";       
             this.cboClass.SelectedIndex = -1;
             //消除事件
-            this.cboClass.SelectedIndexChanged -= new EventHandler(this.cboClass_SelectedIndexChanged);
+            //this.cboClass.SelectedIndexChanged -= new EventHandler(this.cboClass_SelectedIndexChanged);
+            this.cboClass.SelectedIndexChanged += new System.EventHandler(this.cboClass_SelectedIndexChanged);
         }
         //根据班级查询
         private void cboClass_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (this.cboClass.SelectedIndex == -1)
+            {
+                MessageBox.Show("请首先选择要查询的班级！", "查询提示");
+                return;
+            }
+            this.gbStat.Text = "["+this.cboClass.Text.Trim()+"]考试成绩统计";
+            //展示考试成绩列表
+            this.dgvScoreList.AutoGenerateColumns = false;
+            this.dgvScoreList.DataSource = objScoreService.GetScoreList(this.cboClass.Text.ToString());
+            //查询成绩统计结果
+            Dictionary<string, string> dic = objScoreService.GetScoreInfo(this.cboClass.SelectedValue.ToString());
+            this.lblAttendCount.Text = dic["stuCount"];
+            this.lblCSharpAvg.Text = dic["avgCsharp"];
+            this.lblDBAvg.Text = dic["avgDB"];
+            this.lblCount.Text = dic["absentCount"];
+            //显示缺考的学员姓名
+            List<string> list = objScoreService.getAbsentList(this.cboClass.SelectedValue.ToString());
+            this.lblList.Items.Clear();
+            this.lblList.Items.AddRange(list.ToArray());
         }
         //统计全校考试成绩
         private void btnStat_Click(object sender, EventArgs e)
@@ -38,13 +57,13 @@ namespace StudentManager
             this.dgvScoreList.AutoGenerateColumns = false;
             this.dgvScoreList.DataSource = objScoreService.GetScoreList(null);
             //查询成绩统计结果
-            Dictionary<string, string> dic = objScoreService.GetScoreInfo();
+            Dictionary<string, string> dic = objScoreService.GetScoreInfo(null);
             this.lblAttendCount.Text = dic["stuCount"];
             this.lblCSharpAvg.Text = dic["avgCsharp"];
             this.lblDBAvg.Text = dic["avgDB"];
             this.lblCount.Text = dic["absentCount"];
             //显示缺考的学员姓名
-            List<string> list = objScoreService.getAbsentList();
+            List<string> list = objScoreService.getAbsentList(null);
             this.lblList.Items.Clear();
             this.lblList.Items.AddRange(list.ToArray());
             

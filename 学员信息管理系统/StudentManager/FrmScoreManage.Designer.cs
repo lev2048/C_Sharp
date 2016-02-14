@@ -232,7 +232,7 @@
             this.cboClass.Name = "cboClass";
             this.cboClass.Size = new System.Drawing.Size(160, 23);
             this.cboClass.TabIndex = 19;
-            this.cboClass.SelectedIndexChanged += new System.EventHandler(this.cboClass_SelectedIndexChanged);
+            
             // 
             // SQLServerDB
             // 

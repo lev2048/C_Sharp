@@ -48,10 +48,21 @@ namespace DAL
         /// 查询考试综合统计结果
         /// </summary>
         /// <returns></returns>
-        public Dictionary<string,string>GetScoreInfo()
+        public Dictionary<string,string>GetScoreInfo(string classId)
         {
-            string sql = "select stuCount=count(*),avgCsharp=avg(Csharp),avgDB=avg(SQLServerDB) from ScoreList;";
-            sql += "select absentCount=count(*) from Students where StudentId not in(select StudentId from ScoreList)";
+            string sql = "";
+            if (classId == null || classId.Length == 0)//统计全校
+            {
+                sql = "select stuCount=count(*),avgCsharp=avg(Csharp),avgDB=avg(SQLServerDB) from ScoreList;";
+                sql += "select absentCount=count(*) from Students where StudentId not in(select StudentId from ScoreList)";
+            }
+            else//按照班级统计
+            {
+                sql = "select stuCount=count(*),avgCsharp=avg(Csharp),avgDB=avg(SQLServerDB) from ScoreList";
+                sql+= " inner join Students on Students.StudentId=ScoreList.StudentId where ClassId={0};";
+                sql += "select absentCount=count(*) from Students where StudentId not in(select StudentId from ScoreList) and ClassId={1}";
+                sql = string.Format(sql, classId, classId);
+            }
             SqlDataReader objReader = SQLHelper.GetReader(sql);
             Dictionary<string, string> scoreInfo = null;
             if(objReader.Read())
@@ -75,9 +86,13 @@ namespace DAL
         /// 查询缺考的成员姓名
         /// </summary>
         /// <returns></returns>
-        public List<string>getAbsentList()
+        public List<string>getAbsentList(string classId)
         {
             string sql = "select StudentName from Students where StudentId not in(select studentId from ScoreList)";
+            if (classId != null && classId.Length != 0)
+            {
+                sql += " and ClassId=" + classId;
+            }
             SqlDataReader objReader = SQLHelper.GetReader(sql);
             List<string> list = new List<string>();
             while (objReader.Read())
