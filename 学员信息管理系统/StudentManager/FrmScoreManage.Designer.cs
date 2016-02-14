@@ -118,7 +118,7 @@
             // 
             // lblDBAvg
             // 
-            this.lblDBAvg.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblDBAvg.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblDBAvg.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblDBAvg.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblDBAvg.Location = new System.Drawing.Point(120, 219);
@@ -159,7 +159,7 @@
             // 
             // lblCount
             // 
-            this.lblCount.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCount.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblCount.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCount.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblCount.Location = new System.Drawing.Point(120, 102);
@@ -171,7 +171,7 @@
             // 
             // lblCSharpAvg
             // 
-            this.lblCSharpAvg.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCSharpAvg.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblCSharpAvg.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCSharpAvg.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblCSharpAvg.Location = new System.Drawing.Point(120, 159);
@@ -203,7 +203,7 @@
             // 
             // lblAttendCount
             // 
-            this.lblAttendCount.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblAttendCount.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblAttendCount.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAttendCount.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblAttendCount.Location = new System.Drawing.Point(120, 41);
