@@ -78,10 +78,10 @@
             // 
             this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
             this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrint.Location = new System.Drawing.Point(782, 181);
+            this.btnPrint.Location = new System.Drawing.Point(782, 178);
             this.btnPrint.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(169, 29);
+            this.btnPrint.Size = new System.Drawing.Size(169, 36);
             this.btnPrint.TabIndex = 12;
             this.btnPrint.Text = "打印当前学员信息";
             this.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -92,10 +92,10 @@
             // 
             this.btnStuIdDESC.Image = ((System.Drawing.Image)(resources.GetObject("btnStuIdDESC.Image")));
             this.btnStuIdDESC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStuIdDESC.Location = new System.Drawing.Point(532, 36);
+            this.btnStuIdDESC.Location = new System.Drawing.Point(532, 34);
             this.btnStuIdDESC.Margin = new System.Windows.Forms.Padding(4);
             this.btnStuIdDESC.Name = "btnStuIdDESC";
-            this.btnStuIdDESC.Size = new System.Drawing.Size(112, 29);
+            this.btnStuIdDESC.Size = new System.Drawing.Size(112, 31);
             this.btnStuIdDESC.TabIndex = 5;
             this.btnStuIdDESC.Text = "学号降序";
             this.btnStuIdDESC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -106,10 +106,10 @@
             // 
             this.btnNameDESC.Image = ((System.Drawing.Image)(resources.GetObject("btnNameDESC.Image")));
             this.btnNameDESC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNameDESC.Location = new System.Drawing.Point(405, 36);
+            this.btnNameDESC.Location = new System.Drawing.Point(405, 34);
             this.btnNameDESC.Margin = new System.Windows.Forms.Padding(4);
             this.btnNameDESC.Name = "btnNameDESC";
-            this.btnNameDESC.Size = new System.Drawing.Size(112, 29);
+            this.btnNameDESC.Size = new System.Drawing.Size(112, 31);
             this.btnNameDESC.TabIndex = 5;
             this.btnNameDESC.Text = "姓名降序";
             this.btnNameDESC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -124,7 +124,7 @@
             this.btnDel.Location = new System.Drawing.Point(819, 34);
             this.btnDel.Margin = new System.Windows.Forms.Padding(4);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(100, 29);
+            this.btnDel.Size = new System.Drawing.Size(100, 31);
             this.btnDel.TabIndex = 2;
             this.btnDel.Text = "删  除";
             this.btnDel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -138,7 +138,7 @@
             this.btnEidt.Location = new System.Drawing.Point(704, 34);
             this.btnEidt.Margin = new System.Windows.Forms.Padding(4);
             this.btnEidt.Name = "btnEidt";
-            this.btnEidt.Size = new System.Drawing.Size(100, 29);
+            this.btnEidt.Size = new System.Drawing.Size(100, 31);
             this.btnEidt.TabIndex = 2;
             this.btnEidt.Text = "修  改";
             this.btnEidt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -152,7 +152,7 @@
             this.btnClose.Location = new System.Drawing.Point(851, 13);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(100, 29);
+            this.btnClose.Size = new System.Drawing.Size(100, 30);
             this.btnClose.TabIndex = 8;
             this.btnClose.Text = "关闭窗口";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -207,14 +207,14 @@
             // tsmidDeleteStu
             // 
             this.tsmidDeleteStu.Name = "tsmidDeleteStu";
-            this.tsmidDeleteStu.Size = new System.Drawing.Size(181, 26);
+            this.tsmidDeleteStu.Size = new System.Drawing.Size(163, 24);
             this.tsmidDeleteStu.Text = "删除学员(&D)";
             this.tsmidDeleteStu.Click += new System.EventHandler(this.tsmidDeleteStu_Click);
             // 
             // tsmiModifyStu
             // 
             this.tsmiModifyStu.Name = "tsmiModifyStu";
-            this.tsmiModifyStu.Size = new System.Drawing.Size(181, 26);
+            this.tsmiModifyStu.Size = new System.Drawing.Size(163, 24);
             this.tsmiModifyStu.Text = "修改学员(&M)";
             this.tsmiModifyStu.Click += new System.EventHandler(this.tsmiModifyStu_Click);
             // 
@@ -225,7 +225,7 @@
             this.tsmiModifyStu,
             this.tsmidDeleteStu});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(182, 84);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(164, 52);
             // 
             // ClassName
             // 
@@ -319,10 +319,10 @@
             // 
             this.btnQuery.Image = ((System.Drawing.Image)(resources.GetObject("btnQuery.Image")));
             this.btnQuery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQuery.Location = new System.Drawing.Point(291, 36);
+            this.btnQuery.Location = new System.Drawing.Point(291, 34);
             this.btnQuery.Margin = new System.Windows.Forms.Padding(4);
             this.btnQuery.Name = "btnQuery";
-            this.btnQuery.Size = new System.Drawing.Size(100, 29);
+            this.btnQuery.Size = new System.Drawing.Size(100, 31);
             this.btnQuery.TabIndex = 2;
             this.btnQuery.Text = "查  询";
             this.btnQuery.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -368,8 +368,9 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvStudentList);
             this.Controls.Add(this.groupBox2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmStudentManage";
-            this.Text = "FrmStudentManage";
+            this.Text = "信息管理";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
