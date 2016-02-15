@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStudentinfo));
             this.pbStu = new System.Windows.Forms.PictureBox();
             this.lblAddress = new System.Windows.Forms.Label();
             this.lblCardNo = new System.Windows.Forms.Label();
@@ -159,12 +160,15 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(402, 320);
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(606, 311);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(100, 29);
+            this.btnClose.Size = new System.Drawing.Size(100, 35);
             this.btnClose.TabIndex = 38;
             this.btnClose.Text = "关闭窗口";
+            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -271,8 +275,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmStudentinfo";
-            this.Text = "FrmStudentinfo";
+            this.Text = "详情";
             ((System.ComponentModel.ISupportInitialize)(this.pbStu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
