@@ -80,14 +80,14 @@
             // 
             this.txmi_update.Image = ((System.Drawing.Image)(resources.GetObject("txmi_update.Image")));
             this.txmi_update.Name = "txmi_update";
-            this.txmi_update.Size = new System.Drawing.Size(165, 26);
+            this.txmi_update.Size = new System.Drawing.Size(181, 26);
             this.txmi_update.Text = "系统升级(&U)";
             // 
             // tsmi_about
             // 
             this.tsmi_about.Image = ((System.Drawing.Image)(resources.GetObject("tsmi_about.Image")));
             this.tsmi_about.Name = "tsmi_about";
-            this.tsmi_about.Size = new System.Drawing.Size(165, 26);
+            this.tsmi_about.Size = new System.Drawing.Size(181, 26);
             this.tsmi_about.Text = "关于我们(&A)";
             this.tsmi_about.Click += new System.EventHandler(this.tsmi_about_Click);
             // 
@@ -215,14 +215,14 @@
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(162, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(178, 6);
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("华文彩云", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lblTitle.ForeColor = System.Drawing.Color.Black;
             this.lblTitle.Location = new System.Drawing.Point(198, 41);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
@@ -234,7 +234,7 @@
             // 
             this.tsmi_linkxkt.Image = ((System.Drawing.Image)(resources.GetObject("tsmi_linkxkt.Image")));
             this.tsmi_linkxkt.Name = "tsmi_linkxkt";
-            this.tsmi_linkxkt.Size = new System.Drawing.Size(165, 26);
+            this.tsmi_linkxkt.Size = new System.Drawing.Size(181, 26);
             this.tsmi_linkxkt.Text = "访问官网(&X)";
             this.tsmi_linkxkt.Click += new System.EventHandler(this.tsmi_linkxkt_Click);
             // 
@@ -250,12 +250,12 @@
             this.panelForm.Location = new System.Drawing.Point(0, 59);
             this.panelForm.Margin = new System.Windows.Forms.Padding(4);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(1261, 715);
+            this.panelForm.Size = new System.Drawing.Size(1256, 715);
             this.panelForm.TabIndex = 12;
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.系统ToolStripMenuItem,
@@ -284,20 +284,20 @@
             // 
             this.tmiModifyPwd.Image = ((System.Drawing.Image)(resources.GetObject("tmiModifyPwd.Image")));
             this.tmiModifyPwd.Name = "tmiModifyPwd";
-            this.tmiModifyPwd.Size = new System.Drawing.Size(164, 26);
+            this.tmiModifyPwd.Size = new System.Drawing.Size(181, 26);
             this.tmiModifyPwd.Text = "密码修改(&C)";
             this.tmiModifyPwd.Click += new System.EventHandler(this.tmiModifyPwd_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(161, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(178, 6);
             // 
             // tmiClose
             // 
             this.tmiClose.Image = ((System.Drawing.Image)(resources.GetObject("tmiClose.Image")));
             this.tmiClose.Name = "tmiClose";
-            this.tmiClose.Size = new System.Drawing.Size(164, 26);
+            this.tmiClose.Size = new System.Drawing.Size(181, 26);
             this.tmiClose.Text = "退出(&E)";
             this.tmiClose.Click += new System.EventHandler(this.tmiClose_Click);
             // 
@@ -377,20 +377,20 @@
             // 
             this.tsmi_Card.Image = ((System.Drawing.Image)(resources.GetObject("tsmi_Card.Image")));
             this.tsmi_Card.Name = "tsmi_Card";
-            this.tsmi_Card.Size = new System.Drawing.Size(164, 26);
+            this.tsmi_Card.Size = new System.Drawing.Size(181, 26);
             this.tsmi_Card.Text = "考勤打卡(&R)";
             this.tsmi_Card.Click += new System.EventHandler(this.tsmi_Card_Click);
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(161, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(178, 6);
             // 
             // tsmi_AQuery
             // 
             this.tsmi_AQuery.Image = ((System.Drawing.Image)(resources.GetObject("tsmi_AQuery.Image")));
             this.tsmi_AQuery.Name = "tsmi_AQuery";
-            this.tsmi_AQuery.Size = new System.Drawing.Size(164, 26);
+            this.tsmi_AQuery.Size = new System.Drawing.Size(181, 26);
             this.tsmi_AQuery.Text = "考勤查询";
             this.tsmi_AQuery.Click += new System.EventHandler(this.tsmi_AQuery_Click);
             // 
@@ -420,8 +420,10 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.panelForm);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMain";
-            this.Text = "FrmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "学员信息管理系统";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();

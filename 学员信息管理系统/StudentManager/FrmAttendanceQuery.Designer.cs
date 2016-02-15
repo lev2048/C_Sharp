@@ -70,10 +70,10 @@
             // 
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(822, 21);
+            this.btnClose.Location = new System.Drawing.Point(1105, 21);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(109, 29);
+            this.btnClose.Size = new System.Drawing.Size(109, 32);
             this.btnClose.TabIndex = 25;
             this.btnClose.Text = "关闭窗口";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -85,7 +85,7 @@
             this.lblAbsenceCount.BackColor = System.Drawing.Color.White;
             this.lblAbsenceCount.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblAbsenceCount.ForeColor = System.Drawing.Color.Red;
-            this.lblAbsenceCount.Location = new System.Drawing.Point(868, 79);
+            this.lblAbsenceCount.Location = new System.Drawing.Point(1151, 79);
             this.lblAbsenceCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAbsenceCount.Name = "lblAbsenceCount";
             this.lblAbsenceCount.Size = new System.Drawing.Size(64, 29);
@@ -97,7 +97,7 @@
             // 
             this.lblReal.BackColor = System.Drawing.Color.White;
             this.lblReal.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblReal.Location = new System.Drawing.Point(744, 79);
+            this.lblReal.Location = new System.Drawing.Point(1027, 79);
             this.lblReal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblReal.Name = "lblReal";
             this.lblReal.Size = new System.Drawing.Size(64, 29);
@@ -109,7 +109,7 @@
             // 
             this.lblCount.BackColor = System.Drawing.Color.White;
             this.lblCount.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblCount.Location = new System.Drawing.Point(620, 79);
+            this.lblCount.Location = new System.Drawing.Point(903, 79);
             this.lblCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCount.Name = "lblCount";
             this.lblCount.Size = new System.Drawing.Size(64, 29);
@@ -175,7 +175,7 @@
             this.dgvStudentList.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvStudentList.RowTemplate.Height = 23;
             this.dgvStudentList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStudentList.Size = new System.Drawing.Size(913, 525);
+            this.dgvStudentList.Size = new System.Drawing.Size(1206, 525);
             this.dgvStudentList.TabIndex = 20;
             this.dgvStudentList.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvStudentList_RowPostPaint);
             // 
@@ -226,7 +226,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(819, 86);
+            this.label7.Location = new System.Drawing.Point(1102, 86);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(52, 15);
@@ -245,7 +245,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(695, 86);
+            this.label5.Location = new System.Drawing.Point(978, 86);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 15);
@@ -255,7 +255,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(571, 86);
+            this.label3.Location = new System.Drawing.Point(854, 86);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 15);
@@ -286,7 +286,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(951, 671);
+            this.ClientSize = new System.Drawing.Size(1238, 637);
             this.Controls.Add(this.dgvStudentList);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnClose);
@@ -301,8 +301,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAttendanceQuery";
-            this.Text = "FrmAttendanceQuery";
+            this.Text = "考勤查询";
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudentList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

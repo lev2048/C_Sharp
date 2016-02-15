@@ -60,7 +60,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.lblList);
-            this.groupBox1.Location = new System.Drawing.Point(934, 142);
+            this.groupBox1.Location = new System.Drawing.Point(967, 141);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -84,7 +84,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.ForeColor = System.Drawing.Color.Purple;
-            this.label9.Location = new System.Drawing.Point(17, 28);
+            this.label9.Location = new System.Drawing.Point(50, 27);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(246, 42);
@@ -93,7 +93,7 @@
             // 
             // btnStat
             // 
-            this.btnStat.Location = new System.Drawing.Point(474, 98);
+            this.btnStat.Location = new System.Drawing.Point(507, 97);
             this.btnStat.Margin = new System.Windows.Forms.Padding(4);
             this.btnStat.Name = "btnStat";
             this.btnStat.Size = new System.Drawing.Size(223, 29);
@@ -106,7 +106,7 @@
             // 
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(1020, 89);
+            this.btnClose.Location = new System.Drawing.Point(1053, 88);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(109, 29);
@@ -138,7 +138,7 @@
             this.gbStat.Controls.Add(this.label6);
             this.gbStat.Controls.Add(this.lblAttendCount);
             this.gbStat.Controls.Add(this.label3);
-            this.gbStat.Location = new System.Drawing.Point(705, 148);
+            this.gbStat.Location = new System.Drawing.Point(738, 147);
             this.gbStat.Margin = new System.Windows.Forms.Padding(4);
             this.gbStat.Name = "gbStat";
             this.gbStat.Padding = new System.Windows.Forms.Padding(4);
@@ -227,12 +227,11 @@
             // 
             this.cboClass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboClass.FormattingEnabled = true;
-            this.cboClass.Location = new System.Drawing.Point(134, 98);
+            this.cboClass.Location = new System.Drawing.Point(167, 97);
             this.cboClass.Margin = new System.Windows.Forms.Padding(4);
             this.cboClass.Name = "cboClass";
             this.cboClass.Size = new System.Drawing.Size(160, 23);
             this.cboClass.TabIndex = 19;
-            
             // 
             // SQLServerDB
             // 
@@ -290,7 +289,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvScoreList.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvScoreList.Location = new System.Drawing.Point(25, 148);
+            this.dgvScoreList.Location = new System.Drawing.Point(58, 147);
             this.dgvScoreList.Margin = new System.Windows.Forms.Padding(4);
             this.dgvScoreList.Name = "dgvScoreList";
             this.dgvScoreList.ReadOnly = true;
@@ -302,7 +301,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 103);
+            this.label1.Location = new System.Drawing.Point(73, 102);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 15);
@@ -313,7 +312,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1162, 579);
+            this.ClientSize = new System.Drawing.Size(1238, 579);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnStat);
@@ -322,8 +321,9 @@
             this.Controls.Add(this.cboClass);
             this.Controls.Add(this.dgvScoreList);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmScoreManage";
-            this.Text = "FrmScoreManage";
+            this.Text = "成绩管理";
             this.groupBox1.ResumeLayout(false);
             this.gbStat.ResumeLayout(false);
             this.gbStat.PerformLayout();

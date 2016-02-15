@@ -78,10 +78,10 @@
             // 
             this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
             this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrint.Location = new System.Drawing.Point(782, 178);
+            this.btnPrint.Location = new System.Drawing.Point(1032, 183);
             this.btnPrint.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(169, 36);
+            this.btnPrint.Size = new System.Drawing.Size(175, 36);
             this.btnPrint.TabIndex = 12;
             this.btnPrint.Text = "打印当前学员信息";
             this.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -92,10 +92,10 @@
             // 
             this.btnStuIdDESC.Image = ((System.Drawing.Image)(resources.GetObject("btnStuIdDESC.Image")));
             this.btnStuIdDESC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStuIdDESC.Location = new System.Drawing.Point(532, 34);
+            this.btnStuIdDESC.Location = new System.Drawing.Point(528, 26);
             this.btnStuIdDESC.Margin = new System.Windows.Forms.Padding(4);
             this.btnStuIdDESC.Name = "btnStuIdDESC";
-            this.btnStuIdDESC.Size = new System.Drawing.Size(112, 31);
+            this.btnStuIdDESC.Size = new System.Drawing.Size(112, 47);
             this.btnStuIdDESC.TabIndex = 5;
             this.btnStuIdDESC.Text = "学号降序";
             this.btnStuIdDESC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -106,10 +106,10 @@
             // 
             this.btnNameDESC.Image = ((System.Drawing.Image)(resources.GetObject("btnNameDESC.Image")));
             this.btnNameDESC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNameDESC.Location = new System.Drawing.Point(405, 34);
+            this.btnNameDESC.Location = new System.Drawing.Point(399, 26);
             this.btnNameDESC.Margin = new System.Windows.Forms.Padding(4);
             this.btnNameDESC.Name = "btnNameDESC";
-            this.btnNameDESC.Size = new System.Drawing.Size(112, 31);
+            this.btnNameDESC.Size = new System.Drawing.Size(112, 47);
             this.btnNameDESC.TabIndex = 5;
             this.btnNameDESC.Text = "姓名降序";
             this.btnNameDESC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -121,10 +121,10 @@
             this.btnDel.ForeColor = System.Drawing.Color.Red;
             this.btnDel.Image = ((System.Drawing.Image)(resources.GetObject("btnDel.Image")));
             this.btnDel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDel.Location = new System.Drawing.Point(819, 34);
+            this.btnDel.Location = new System.Drawing.Point(1046, 26);
             this.btnDel.Margin = new System.Windows.Forms.Padding(4);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(100, 31);
+            this.btnDel.Size = new System.Drawing.Size(106, 39);
             this.btnDel.TabIndex = 2;
             this.btnDel.Text = "删  除";
             this.btnDel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -135,10 +135,10 @@
             // 
             this.btnEidt.Image = ((System.Drawing.Image)(resources.GetObject("btnEidt.Image")));
             this.btnEidt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEidt.Location = new System.Drawing.Point(704, 34);
+            this.btnEidt.Location = new System.Drawing.Point(897, 26);
             this.btnEidt.Margin = new System.Windows.Forms.Padding(4);
             this.btnEidt.Name = "btnEidt";
-            this.btnEidt.Size = new System.Drawing.Size(100, 31);
+            this.btnEidt.Size = new System.Drawing.Size(106, 38);
             this.btnEidt.TabIndex = 2;
             this.btnEidt.Text = "修  改";
             this.btnEidt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -149,10 +149,10 @@
             // 
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(851, 13);
+            this.btnClose.Location = new System.Drawing.Point(1069, 13);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(100, 30);
+            this.btnClose.Size = new System.Drawing.Size(124, 40);
             this.btnClose.TabIndex = 8;
             this.btnClose.Text = "关闭窗口";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -207,14 +207,14 @@
             // tsmidDeleteStu
             // 
             this.tsmidDeleteStu.Name = "tsmidDeleteStu";
-            this.tsmidDeleteStu.Size = new System.Drawing.Size(163, 24);
+            this.tsmidDeleteStu.Size = new System.Drawing.Size(169, 26);
             this.tsmidDeleteStu.Text = "删除学员(&D)";
             this.tsmidDeleteStu.Click += new System.EventHandler(this.tsmidDeleteStu_Click);
             // 
             // tsmiModifyStu
             // 
             this.tsmiModifyStu.Name = "tsmiModifyStu";
-            this.tsmiModifyStu.Size = new System.Drawing.Size(163, 24);
+            this.tsmiModifyStu.Size = new System.Drawing.Size(169, 26);
             this.tsmiModifyStu.Text = "修改学员(&M)";
             this.tsmiModifyStu.Click += new System.EventHandler(this.tsmiModifyStu_Click);
             // 
@@ -225,7 +225,7 @@
             this.tsmiModifyStu,
             this.tsmidDeleteStu});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(164, 52);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(170, 56);
             // 
             // ClassName
             // 
@@ -300,7 +300,7 @@
             this.dgvStudentList.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvStudentList.RowTemplate.Height = 23;
             this.dgvStudentList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStudentList.Size = new System.Drawing.Size(943, 406);
+            this.dgvStudentList.Size = new System.Drawing.Size(1175, 376);
             this.dgvStudentList.TabIndex = 10;
             this.dgvStudentList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStudentList_CellContentClick);
             this.dgvStudentList.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvStudentList_RowPostPaint);
@@ -319,10 +319,10 @@
             // 
             this.btnQuery.Image = ((System.Drawing.Image)(resources.GetObject("btnQuery.Image")));
             this.btnQuery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQuery.Location = new System.Drawing.Point(291, 34);
+            this.btnQuery.Location = new System.Drawing.Point(291, 26);
             this.btnQuery.Margin = new System.Windows.Forms.Padding(4);
             this.btnQuery.Name = "btnQuery";
-            this.btnQuery.Size = new System.Drawing.Size(100, 31);
+            this.btnQuery.Size = new System.Drawing.Size(100, 47);
             this.btnQuery.TabIndex = 2;
             this.btnQuery.Text = "查  询";
             this.btnQuery.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -352,7 +352,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(943, 89);
+            this.groupBox2.Size = new System.Drawing.Size(1175, 89);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "[按照班级查询]";
@@ -361,7 +361,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(999, 646);
+            this.ClientSize = new System.Drawing.Size(1238, 637);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnClose);

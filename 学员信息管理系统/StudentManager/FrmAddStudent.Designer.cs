@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAddStudent));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtStudentName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -74,7 +75,7 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtStudentIdNo);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(355, 135);
+            this.groupBox1.Location = new System.Drawing.Point(392, 160);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -252,7 +253,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.ForeColor = System.Drawing.Color.Blue;
-            this.label9.Location = new System.Drawing.Point(79, 27);
+            this.label9.Location = new System.Drawing.Point(116, 52);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(155, 36);
             this.label9.TabIndex = 15;
@@ -261,7 +262,7 @@
             // pbStu
             // 
             this.pbStu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbStu.Location = new System.Drawing.Point(30, 135);
+            this.pbStu.Location = new System.Drawing.Point(67, 160);
             this.pbStu.Name = "pbStu";
             this.pbStu.Size = new System.Drawing.Size(268, 262);
             this.pbStu.TabIndex = 16;
@@ -269,7 +270,7 @@
             // 
             // btnChoseImage
             // 
-            this.btnChoseImage.Location = new System.Drawing.Point(110, 427);
+            this.btnChoseImage.Location = new System.Drawing.Point(147, 452);
             this.btnChoseImage.Name = "btnChoseImage";
             this.btnChoseImage.Size = new System.Drawing.Size(96, 36);
             this.btnChoseImage.TabIndex = 17;
@@ -279,21 +280,27 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(852, 31);
+            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
+            this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdd.Location = new System.Drawing.Point(889, 56);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(96, 36);
+            this.btnAdd.Size = new System.Drawing.Size(108, 47);
             this.btnAdd.TabIndex = 17;
             this.btnAdd.Text = "确认添加";
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(1003, 31);
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(1058, 56);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(96, 36);
+            this.btnClose.Size = new System.Drawing.Size(108, 47);
             this.btnClose.TabIndex = 17;
             this.btnClose.Text = "关闭窗口";
+            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -301,13 +308,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1173, 491);
+            this.ClientSize = new System.Drawing.Size(1238, 637);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnChoseImage);
             this.Controls.Add(this.pbStu);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAddStudent";
             this.Text = "FrmAddStudent";
             this.groupBox1.ResumeLayout(false);

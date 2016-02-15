@@ -62,7 +62,7 @@
             this.dgvScoreList.Name = "dgvScoreList";
             this.dgvScoreList.ReadOnly = true;
             this.dgvScoreList.RowTemplate.Height = 23;
-            this.dgvScoreList.Size = new System.Drawing.Size(747, 456);
+            this.dgvScoreList.Size = new System.Drawing.Size(1205, 456);
             this.dgvScoreList.TabIndex = 18;
             // 
             // StudentId
@@ -118,7 +118,7 @@
             // 
             // btnShowAll
             // 
-            this.btnShowAll.Location = new System.Drawing.Point(619, 83);
+            this.btnShowAll.Location = new System.Drawing.Point(1057, 86);
             this.btnShowAll.Margin = new System.Windows.Forms.Padding(4);
             this.btnShowAll.Name = "btnShowAll";
             this.btnShowAll.Size = new System.Drawing.Size(140, 29);
@@ -180,10 +180,10 @@
             // 
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(651, 36);
+            this.btnClose.Location = new System.Drawing.Point(1077, 25);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(108, 29);
+            this.btnClose.Size = new System.Drawing.Size(120, 39);
             this.btnClose.TabIndex = 19;
             this.btnClose.Text = "关闭窗口";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -194,7 +194,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(785, 615);
+            this.ClientSize = new System.Drawing.Size(1238, 637);
             this.Controls.Add(this.dgvScoreList);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnShowAll);
@@ -204,8 +204,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnClose);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmScoreQuery";
-            this.Text = "FrmScoreQuery";
+            this.Text = "成绩快速浏览";
             ((System.ComponentModel.ISupportInitialize)(this.dgvScoreList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

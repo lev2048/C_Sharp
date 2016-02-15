@@ -52,10 +52,10 @@
             // 
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(486, 149);
+            this.btnClose.Location = new System.Drawing.Point(473, 149);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(100, 29);
+            this.btnClose.Size = new System.Drawing.Size(113, 46);
             this.btnClose.TabIndex = 10;
             this.btnClose.Text = "退  出";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -69,7 +69,7 @@
             this.btnLogin.Location = new System.Drawing.Point(318, 149);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(100, 29);
+            this.btnLogin.Size = new System.Drawing.Size(113, 46);
             this.btnLogin.TabIndex = 9;
             this.btnLogin.Text = "登  录";
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

@@ -68,7 +68,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.Purple;
-            this.label1.Location = new System.Drawing.Point(13, 9);
+            this.label1.Location = new System.Drawing.Point(66, 13);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(317, 42);
@@ -168,7 +168,7 @@
             this.gp01.Controls.Add(this.label21);
             this.gp01.Controls.Add(this.label23);
             this.gp01.Controls.Add(this.label17);
-            this.gp01.Location = new System.Drawing.Point(326, 165);
+            this.gp01.Location = new System.Drawing.Point(379, 169);
             this.gp01.Margin = new System.Windows.Forms.Padding(4);
             this.gp01.Name = "gp01";
             this.gp01.Padding = new System.Windows.Forms.Padding(4);
@@ -290,7 +290,7 @@
             // pbStu
             // 
             this.pbStu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pbStu.Location = new System.Drawing.Point(38, 165);
+            this.pbStu.Location = new System.Drawing.Point(91, 169);
             this.pbStu.Margin = new System.Windows.Forms.Padding(4);
             this.pbStu.Name = "pbStu";
             this.pbStu.Size = new System.Drawing.Size(237, 246);
@@ -304,7 +304,7 @@
             this.lblWeek.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblWeek.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWeek.ForeColor = System.Drawing.Color.Red;
-            this.lblWeek.Location = new System.Drawing.Point(816, 79);
+            this.lblWeek.Location = new System.Drawing.Point(869, 83);
             this.lblWeek.Margin = new System.Windows.Forms.Padding(23, 0, 23, 0);
             this.lblWeek.Name = "lblWeek";
             this.lblWeek.Size = new System.Drawing.Size(60, 36);
@@ -318,7 +318,7 @@
             this.lblDay.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblDay.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDay.ForeColor = System.Drawing.Color.Red;
-            this.lblDay.Location = new System.Drawing.Point(403, 79);
+            this.lblDay.Location = new System.Drawing.Point(456, 83);
             this.lblDay.Margin = new System.Windows.Forms.Padding(23, 0, 23, 0);
             this.lblDay.Name = "lblDay";
             this.lblDay.Size = new System.Drawing.Size(60, 36);
@@ -332,7 +332,7 @@
             this.lblMonth.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblMonth.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMonth.ForeColor = System.Drawing.Color.Red;
-            this.lblMonth.Location = new System.Drawing.Point(270, 79);
+            this.lblMonth.Location = new System.Drawing.Point(323, 83);
             this.lblMonth.Margin = new System.Windows.Forms.Padding(23, 0, 23, 0);
             this.lblMonth.Name = "lblMonth";
             this.lblMonth.Size = new System.Drawing.Size(60, 36);
@@ -346,7 +346,7 @@
             this.lblTime.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblTime.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.ForeColor = System.Drawing.Color.Red;
-            this.lblTime.Location = new System.Drawing.Point(527, 79);
+            this.lblTime.Location = new System.Drawing.Point(580, 83);
             this.lblTime.Margin = new System.Windows.Forms.Padding(23, 0, 23, 0);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(179, 36);
@@ -360,7 +360,7 @@
             this.lblYear.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblYear.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYear.ForeColor = System.Drawing.Color.Red;
-            this.lblYear.Location = new System.Drawing.Point(108, 79);
+            this.lblYear.Location = new System.Drawing.Point(161, 83);
             this.lblYear.Margin = new System.Windows.Forms.Padding(23, 0, 23, 0);
             this.lblYear.Name = "lblYear";
             this.lblYear.Size = new System.Drawing.Size(97, 36);
@@ -372,7 +372,7 @@
             // 
             this.label9.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label9.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(710, 73);
+            this.label9.Location = new System.Drawing.Point(763, 77);
             this.label9.Margin = new System.Windows.Forms.Padding(23, 0, 23, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(96, 49);
@@ -384,7 +384,7 @@
             // 
             this.label6.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label6.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(457, 73);
+            this.label6.Location = new System.Drawing.Point(510, 77);
             this.label6.Margin = new System.Windows.Forms.Padding(23, 0, 23, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 49);
@@ -396,7 +396,7 @@
             // 
             this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(341, 73);
+            this.label5.Location = new System.Drawing.Point(394, 77);
             this.label5.Margin = new System.Windows.Forms.Padding(23, 0, 23, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 49);
@@ -408,7 +408,7 @@
             // 
             this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(211, 73);
+            this.label2.Location = new System.Drawing.Point(264, 77);
             this.label2.Margin = new System.Windows.Forms.Padding(23, 0, 23, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 49);
@@ -422,7 +422,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(966, 79);
+            this.btnClose.Location = new System.Drawing.Point(1019, 83);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(139, 32);
@@ -442,7 +442,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1132, 447);
+            this.ClientSize = new System.Drawing.Size(1238, 637);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gp01);
             this.Controls.Add(this.pbStu);
@@ -456,8 +456,9 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnClose);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAttendance";
-            this.Text = "FrmAttendance";
+            this.Text = "打卡";
             this.gp01.ResumeLayout(false);
             this.gp01.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbStu)).EndInit();

@@ -62,10 +62,10 @@
             // 
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(1009, 43);
+            this.btnClose.Location = new System.Drawing.Point(1045, 52);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(109, 29);
+            this.btnClose.Size = new System.Drawing.Size(109, 42);
             this.btnClose.TabIndex = 28;
             this.btnClose.Text = "关闭窗口";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -93,7 +93,7 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtStudentIdNo);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Location = new System.Drawing.Point(336, 88);
+            this.groupBox1.Location = new System.Drawing.Point(372, 108);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -286,7 +286,7 @@
             // 
             // btnChoseImage
             // 
-            this.btnChoseImage.Location = new System.Drawing.Point(111, 364);
+            this.btnChoseImage.Location = new System.Drawing.Point(147, 384);
             this.btnChoseImage.Margin = new System.Windows.Forms.Padding(4);
             this.btnChoseImage.Name = "btnChoseImage";
             this.btnChoseImage.Size = new System.Drawing.Size(131, 29);
@@ -299,10 +299,10 @@
             // 
             this.btnModify.Image = ((System.Drawing.Image)(resources.GetObject("btnModify.Image")));
             this.btnModify.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnModify.Location = new System.Drawing.Point(835, 43);
+            this.btnModify.Location = new System.Drawing.Point(871, 52);
             this.btnModify.Margin = new System.Windows.Forms.Padding(4);
             this.btnModify.Name = "btnModify";
-            this.btnModify.Size = new System.Drawing.Size(115, 29);
+            this.btnModify.Size = new System.Drawing.Size(115, 42);
             this.btnModify.TabIndex = 23;
             this.btnModify.Text = "提交修改";
             this.btnModify.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -312,7 +312,7 @@
             // pbStu
             // 
             this.pbStu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbStu.Location = new System.Drawing.Point(56, 100);
+            this.pbStu.Location = new System.Drawing.Point(92, 120);
             this.pbStu.Margin = new System.Windows.Forms.Padding(4);
             this.pbStu.Name = "pbStu";
             this.pbStu.Size = new System.Drawing.Size(251, 246);
@@ -325,7 +325,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.ForeColor = System.Drawing.Color.Purple;
-            this.label9.Location = new System.Drawing.Point(52, 32);
+            this.label9.Location = new System.Drawing.Point(88, 52);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(246, 42);
@@ -336,15 +336,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1171, 424);
+            this.ClientSize = new System.Drawing.Size(1238, 637);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnChoseImage);
             this.Controls.Add(this.btnModify);
             this.Controls.Add(this.pbStu);
             this.Controls.Add(this.label9);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmEditStudent";
-            this.Text = "FrmEditStudent";
+            this.Text = "信息修改";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbStu)).EndInit();
