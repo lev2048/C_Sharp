@@ -80,14 +80,14 @@
             // 
             this.txmi_update.Image = ((System.Drawing.Image)(resources.GetObject("txmi_update.Image")));
             this.txmi_update.Name = "txmi_update";
-            this.txmi_update.Size = new System.Drawing.Size(181, 26);
+            this.txmi_update.Size = new System.Drawing.Size(165, 26);
             this.txmi_update.Text = "系统升级(&U)";
             // 
             // tsmi_about
             // 
             this.tsmi_about.Image = ((System.Drawing.Image)(resources.GetObject("tsmi_about.Image")));
             this.tsmi_about.Name = "tsmi_about";
-            this.tsmi_about.Size = new System.Drawing.Size(181, 26);
+            this.tsmi_about.Size = new System.Drawing.Size(165, 26);
             this.tsmi_about.Text = "关于我们(&A)";
             this.tsmi_about.Click += new System.EventHandler(this.tsmi_about_Click);
             // 
@@ -101,7 +101,7 @@
             this.statusStrip1.Location = new System.Drawing.Point(0, 649);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1256, 25);
+            this.statusStrip1.Size = new System.Drawing.Size(1255, 25);
             this.statusStrip1.TabIndex = 10;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -139,7 +139,7 @@
             this.tsbExit});
             this.toolStrip1.Location = new System.Drawing.Point(0, 28);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1256, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(1255, 27);
             this.toolStrip1.TabIndex = 11;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -215,7 +215,7 @@
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(178, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(162, 6);
             // 
             // lblTitle
             // 
@@ -234,7 +234,7 @@
             // 
             this.tsmi_linkxkt.Image = ((System.Drawing.Image)(resources.GetObject("tsmi_linkxkt.Image")));
             this.tsmi_linkxkt.Name = "tsmi_linkxkt";
-            this.tsmi_linkxkt.Size = new System.Drawing.Size(181, 26);
+            this.tsmi_linkxkt.Size = new System.Drawing.Size(165, 26);
             this.tsmi_linkxkt.Text = "访问官网(&X)";
             this.tsmi_linkxkt.Click += new System.EventHandler(this.tsmi_linkxkt_Click);
             // 
@@ -250,7 +250,7 @@
             this.panelForm.Location = new System.Drawing.Point(0, 59);
             this.panelForm.Margin = new System.Windows.Forms.Padding(4);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(1256, 715);
+            this.panelForm.Size = new System.Drawing.Size(1255, 715);
             this.panelForm.TabIndex = 12;
             // 
             // menuStrip1
@@ -266,7 +266,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1256, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1255, 28);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -284,20 +284,20 @@
             // 
             this.tmiModifyPwd.Image = ((System.Drawing.Image)(resources.GetObject("tmiModifyPwd.Image")));
             this.tmiModifyPwd.Name = "tmiModifyPwd";
-            this.tmiModifyPwd.Size = new System.Drawing.Size(181, 26);
+            this.tmiModifyPwd.Size = new System.Drawing.Size(164, 26);
             this.tmiModifyPwd.Text = "密码修改(&C)";
             this.tmiModifyPwd.Click += new System.EventHandler(this.tmiModifyPwd_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(178, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(161, 6);
             // 
             // tmiClose
             // 
             this.tmiClose.Image = ((System.Drawing.Image)(resources.GetObject("tmiClose.Image")));
             this.tmiClose.Name = "tmiClose";
-            this.tmiClose.Size = new System.Drawing.Size(181, 26);
+            this.tmiClose.Size = new System.Drawing.Size(164, 26);
             this.tmiClose.Text = "退出(&E)";
             this.tmiClose.Click += new System.EventHandler(this.tmiClose_Click);
             // 
@@ -377,20 +377,20 @@
             // 
             this.tsmi_Card.Image = ((System.Drawing.Image)(resources.GetObject("tsmi_Card.Image")));
             this.tsmi_Card.Name = "tsmi_Card";
-            this.tsmi_Card.Size = new System.Drawing.Size(181, 26);
+            this.tsmi_Card.Size = new System.Drawing.Size(164, 26);
             this.tsmi_Card.Text = "考勤打卡(&R)";
             this.tsmi_Card.Click += new System.EventHandler(this.tsmi_Card_Click);
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(178, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(161, 6);
             // 
             // tsmi_AQuery
             // 
             this.tsmi_AQuery.Image = ((System.Drawing.Image)(resources.GetObject("tsmi_AQuery.Image")));
             this.tsmi_AQuery.Name = "tsmi_AQuery";
-            this.tsmi_AQuery.Size = new System.Drawing.Size(181, 26);
+            this.tsmi_AQuery.Size = new System.Drawing.Size(164, 26);
             this.tsmi_AQuery.Text = "考勤查询";
             this.tsmi_AQuery.Click += new System.EventHandler(this.tsmi_AQuery_Click);
             // 
@@ -415,7 +415,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1256, 674);
+            this.ClientSize = new System.Drawing.Size(1255, 674);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.panelForm);
