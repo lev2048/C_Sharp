@@ -240,7 +240,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="StudentManager_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="Microsoft.Office.Core">
