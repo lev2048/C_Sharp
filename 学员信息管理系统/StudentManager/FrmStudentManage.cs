@@ -189,6 +189,11 @@ namespace StudentManager
         {
             btnDel_Click(null, null);
         }
+
+        private void cboClass_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     /// <summary>
     /// 按照姓名降序排列

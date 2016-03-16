@@ -207,14 +207,14 @@
             // tsmidDeleteStu
             // 
             this.tsmidDeleteStu.Name = "tsmidDeleteStu";
-            this.tsmidDeleteStu.Size = new System.Drawing.Size(169, 26);
+            this.tsmidDeleteStu.Size = new System.Drawing.Size(163, 24);
             this.tsmidDeleteStu.Text = "删除学员(&D)";
             this.tsmidDeleteStu.Click += new System.EventHandler(this.tsmidDeleteStu_Click);
             // 
             // tsmiModifyStu
             // 
             this.tsmiModifyStu.Name = "tsmiModifyStu";
-            this.tsmiModifyStu.Size = new System.Drawing.Size(169, 26);
+            this.tsmiModifyStu.Size = new System.Drawing.Size(163, 24);
             this.tsmiModifyStu.Text = "修改学员(&M)";
             this.tsmiModifyStu.Click += new System.EventHandler(this.tsmiModifyStu_Click);
             // 
@@ -225,7 +225,7 @@
             this.tsmiModifyStu,
             this.tsmidDeleteStu});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(170, 56);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(164, 52);
             // 
             // ClassName
             // 
@@ -314,6 +314,7 @@
             this.cboClass.Name = "cboClass";
             this.cboClass.Size = new System.Drawing.Size(155, 23);
             this.cboClass.TabIndex = 1;
+            this.cboClass.SelectedIndexChanged += new System.EventHandler(this.cboClass_SelectedIndexChanged);
             // 
             // btnQuery
             // 
